@@ -1,0 +1,225 @@
+@red: #F44336;
+@pink: #E91E63;
+@purple: #9C27B0;
+@deep-purple: #673AB7;
+@indigo: #3F51B5;
+@blue: #2196F3;
+@light-blue: #03A9F4;
+@cyan: #00BCD4;
+@teal: #009688;
+@green: #4CAF50;
+@light-green: #8BC34A;
+@lime: #CDDC39;
+@yellow: #FFEB3B;
+@amber: #FFC107;
+@orange: #FF5722;
+@deep-orange: #FF5722;
+@brown: #795548;
+@grey: #9E9E9E;
+@blue-grey: #607D8B;
+@black: #000;
+@white: #FFF;
+
+.color(@color, @fontColor:#fff) {
+    color: @fontColor;
+    border-color: @color !important;
+    background-color: @color !important;
+}
+
+.fontColor(@color) {
+    color: @color;
+    border-color: transparent !important;
+    background-color: transparent !important;
+    // opacity: 0.8;
+}
+
+.fontButtonColor() {
+    color: @white !important;
+    border-color: transparent !important;
+    background-color: transparent !important;
+    opacity: 0.8;
+    letter-spacing: 3px;
+}
+
+.neo.button .icon {
+    .fontButtonColor();
+}
+
+.neo.red {
+    .color(@red);
+}
+
+.neo.icon.red {
+    .fontColor(@red);
+}
+
+.neo.pink {
+    .color(@pink);
+}
+
+.neo.icon.pink {
+    .fontColor(@pink);
+}
+
+.neo.purple {
+    .color(@purple);
+}
+
+.neo.icon.purple {
+    .fontColor(@purple);
+}
+
+.neo.deep-purple {
+    .color(@deep-purple);
+}
+
+.neo.icon.deep-purple {
+    .fontColor(@deep-purple);
+}
+
+.neo.indigo {
+    .color(@indigo);
+}
+
+.neo.icon.indigo {
+    .fontColor(@indigo);
+}
+
+.neo.blue {
+    .color(@blue);
+}
+
+.neo.icon.blue {
+    .fontColor(@blue);
+}
+
+.neo.light-blue {
+    .color(@light-blue);
+}
+
+.neo.icon.light-blue {
+    .fontColor(@light-blue);
+}
+
+.neo.cyan {
+    .color(@cyan);
+}
+
+.neo.icon.cyan {
+    .fontColor(@cyan);
+}
+
+.neo.teal {
+    .color(@teal);
+}
+
+.neo.icon.teal {
+    .fontColor(@teal);
+}
+
+.neo.green {
+    .color(@green);
+}
+
+.neo.icon.green {
+    .fontColor(@green);
+}
+
+.neo.light-green {
+    .color(@light-green);
+}
+
+.neo.icon.light-green {
+    .fontColor(@light-green);
+}
+
+.neo.lime {
+    .color(@lime);
+}
+
+.neo.icon.lime {
+    .fontColor(@lime);
+}
+
+.neo.yellow {
+    .color(@yellow);
+}
+
+.neo.icon.yellow {
+    .fontColor(@yellow);
+}
+
+.neo.amber {
+    .color(@amber);
+}
+
+.neo.icon.amber {
+    .fontColor(@amber);
+}
+
+.neo.orange {
+    .color(@orange);
+}
+
+.neo.icon.orange {
+    .fontColor(@orange);
+}
+
+.neo.deep-orange {
+    .color(@deep-orange);
+}
+
+.neo.icon.deep-orange {
+    .fontColor(@deep-orange);
+}
+
+.neo.brown {
+    .color(@brown);
+}
+
+.neo.icon.brown {
+    .fontColor(@brown);
+}
+
+.neo.grey {
+    .color(@grey);
+}
+
+.neo.icon.grey {
+    .fontColor(@grey);
+}
+
+.neo.blue-grey {
+    .color(@blue-grey);
+}
+
+.neo.icon.blue-grey, {
+    .fontColor(@blue-grey);
+}
+
+.neo.black {
+    .color(@black);
+}
+
+.neo.icon.black {
+    .fontColor(@black);
+}
+
+.neo.white {
+    .color(@white, @black);
+}
+
+.neo.icon.white {
+    .fontColor(@white);
+}
+// .neo.red.basic {
+//     .color(@red, @red);
+// }
+// .neo.button.red.basic.invert:hover {
+//     .color(@red, @white);
+// }
+//
+// .neo.button.red.basic.invert:active {
+//     .color(@red, @white);
+//     .buttonHover();
+// }
