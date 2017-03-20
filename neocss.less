@@ -1,13 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans');
 @border-radius: 3px;
 @margin: 1em;
 @padding: 1em;
 @padding-x: 1em;
 @padding-y: 0.5em;
+@fontColor: #555;
+@fontHoverColor: #000;
+@fontActionColor: #222;
+@buttonFontColor: #000;
+@buttonColor: #E6E6E6;
 
+.paddingDefault() {
+    padding: @padding-y @padding-x;
+}
+
+.paddingDefaultSmall() {
+    padding: @padding-y/4 @padding-x/4;
+}
 @import "components/margin.less";
 @import "components/button.less";
+@import "components/size.less";
+@import "components/label.less";
 @import "components/card.less";
 @import "components/color.less";
 @import "components/grid.less";
@@ -17,10 +30,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.paddingDefault() {
-    padding: @padding-y @padding-x;
 }
 
 h1,
@@ -40,6 +49,30 @@ h4 a,
 h5 a,
 h6 a {
     font-weight: inherit;
+}
+
+a {
+    color: @fontColor;
+    text-decoration: none!important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+a:hover {
+    color: @fontHoverColor;
+}
+
+a:active {
+    color: @fontColor;
 }
 
 .neo.container {
@@ -63,6 +96,6 @@ h6 a {
     float: right;
 }
 
-.hidden {
+.hide {
     display: none;
 }

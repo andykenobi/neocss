@@ -22,8 +22,8 @@ textarea {
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none!important;
-    background-color: #E6E6E6;
-    color: rgba(0, 0, 0, 0.8);
+    background-color: @buttonColor;
+    color: @buttonFontColor;
     border-radius: @border-radius;
     text-align: center;
     cursor: pointer;
@@ -66,25 +66,25 @@ textarea {
     outline: 0;
 }
 
-.neo.button.xsmall {
-    font-size: 70%;
-}
-
-.neo.button.small {
-    font-size: 85%;
-}
-
-.neo.button.large {
-    font-size: 110%;
-}
-
-.neo.button.xlarge {
-    font-size: 125%;
-}
-
-.neo.button.jumbo {
-    font-size: 200%;
-}
+// .neo.button.xsmall {
+//     font-size: 70%;
+// }
+//
+// .neo.button.small {
+//     font-size: 85%;
+// }
+//
+// .neo.button.large {
+//     font-size: 110%;
+// }
+//
+// .neo.button.xlarge {
+//     font-size: 125%;
+// }
+//
+// .neo.button.jumbo {
+//     font-size: 200%;
+// }
 
 .neo.button.block {
     border-radius: 0 !important;
@@ -137,6 +137,7 @@ textarea {
 }
 
 .neo.animate.button:hover .hidden.content {
+    top: 45%;
     left: auto;
     right: 0;
 }
@@ -163,6 +164,7 @@ textarea {
 }
 
 .neo.animate.button.vertical:hover .hidden.content {
-    top: 50%;
+    // top: 50%;
+    top: 45%;
     right: auto;
 }
