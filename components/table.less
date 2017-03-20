@@ -1,0 +1,24 @@
+.neo.table {
+    border: 1px solid @lineColor;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.neo.table th {
+    text-align: left;
+}
+
+.neo.table td,
+.neo.table th {
+    padding: @padding;
+    text-align: left;
+    border-bottom: 1px solid @tableColor;
+}
+
+tr:nth-child(even) {
+    background-color: @tableColor;
+}
+
+.neo.table.hover tbody tr:hover {
+    background-color: @tableColor;
+}

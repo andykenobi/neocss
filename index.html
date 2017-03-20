@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <title>Neo CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet/less" href="neocss.less">
-    <script src="less.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
-    <link rel="stylesheet" href="flexboxgrid.css">
-
     <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="flexboxgrid.css">
+    <link rel="stylesheet/less" href="neocss.less">
+    <script src="libs/less.min.js" charset="utf-8"></script>
     <script src="neocss.js" charset="utf-8"></script>
 </head>
 
@@ -19,31 +19,39 @@
 
     <div class="neo container">
         <div class="neo panel">
-
-            <a href="#" class="neo button">button</a>
-
-            <div href="#" class="neo label">
-                <i class="fa fa-envelope neo icon"></i>
-                <div class="detail">
-                    23
-                </div>
-                <a href="#" class="detail">
-                    View mail
-                </a>
-            </div>
-
-            <span class="neo label red">red 22</span>
-            <span class="neo label blue">22</span>
-
-            <div class="neo label">
-                Dog
-                <div class="detail">
-                    32
-                </div>
-            </div>
-
+            <table class="neo table hover">
+                <thead class="neo green">
+                    <tr>
+                        <th>Title</th>
+                        <th>Title</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                    </tr><tr>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+
 </body>
 
 </html>

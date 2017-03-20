@@ -9,6 +9,8 @@
 @fontActionColor: #222;
 @buttonFontColor: #000;
 @buttonColor: #E6E6E6;
+@lineColor: #E6E6E6;
+@tableColor: #f2f2f2;
 
 .paddingDefault() {
     padding: @padding-y @padding-x;
@@ -17,7 +19,11 @@
 .paddingDefaultSmall() {
     padding: @padding-y/4 @padding-x/4;
 }
+@import "reset.less";
 @import "components/margin.less";
+@import "components/display.less";
+@import "components/text.less";
+@import "components/table.less";
 @import "components/button.less";
 @import "components/size.less";
 @import "components/label.less";
@@ -25,12 +31,6 @@
 @import "components/color.less";
 @import "components/grid.less";
 @import "components/image.less";
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 h1,
 h2,
@@ -53,18 +53,6 @@ h6 a {
 
 a {
     color: @fontColor;
-    text-decoration: none!important;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
 }
 
 a:hover {
@@ -88,12 +76,24 @@ a:active {
     .paddingDefault();
 }
 
-.neo.float {
+.neo.float-left {
     float: left;
 }
 
-.neo.float.right {
+.neo.float-right {
     float: right;
+}
+
+.neo.opacity {
+    opacity: 0.7;
+}
+
+.neo.opacity2 {
+    opacity: 0.5;
+}
+
+.neo.opacity3 {
+    opacity: 0.3;
 }
 
 .hide {
